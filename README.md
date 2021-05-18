@@ -2,7 +2,7 @@
 
 Created to store as lessons learned from the language and to have as a future reference. It also contains tests and codes from other programmers as a study.
 
-# To test the exercises via container
+# IIf you want to test the exercises through the docker
 
 1. Build this image
 ```
