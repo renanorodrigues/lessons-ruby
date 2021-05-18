@@ -8,8 +8,6 @@ WORKDIR /app
 
 COPY Gemfile Gemfile.lock ./
 
-RUN bundle install
+RUN bundle check || bundle install
 
 COPY . ./
-
-CMD ["bundle", "exec", "rackup"]
