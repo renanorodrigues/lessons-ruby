@@ -15,3 +15,24 @@ end
 Some.number = 12
 Some.name = "Renan"
 puts Some.context
+# ------------------------------------------------------------------------------------
+# Define methods and attributes in runtime
+class User
+  def initialize(name)
+    @name = name
+  end
+end
+
+joao = User.new("João")
+
+# The instance 'joao' now have an method instance 'emailValid' and attribute 'email'
+class << joao
+  attr_accessor :name, :email
+  
+  def emailValid?
+    self.email.match?("@")
+  end
+end
+
+joao.email = "joao@email.com" # returns true
+puts joao.emailValid?
