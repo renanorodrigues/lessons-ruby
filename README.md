@@ -6,11 +6,11 @@ Created to store as lessons learned from the language and to have as a future re
 
 1. Build this image
 ```
-docker build -t <your-image-name-ruby>
+docker-compose build
 ```
 2. Run the container with shell
 ```
-docker run --rm -it <your-image-name-ruby> sh
+docker-compose run app sh
 ```
 3. Execute any scripts in ruby!
 ```
