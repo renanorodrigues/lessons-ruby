@@ -11,7 +11,7 @@ end
 puts nameUser.call("Rogério")
 
 puts"--------- Modify Proc -----------"
-# With this a can modify a block in a runtime
+# With this I can modify a block in runtime
 
 nameUser = showInfo do |fullName, email|
   puts "User: #{fullName}"
